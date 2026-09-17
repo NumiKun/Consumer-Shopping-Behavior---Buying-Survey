@@ -1,0 +1,54 @@
+{
+    "model_name": "KMeans Customer Segmentation",
+    "trained_at": "2026-09-17T14:16:42.329528",
+    "n_clusters": 2,
+    "n_pca_components": 23,
+    "pca_explained_variance": 0.9160838563397464,
+    "silhouette_score": 0.06869913289679765,
+    "davies_bouldin_score": 3.6409951729376253,
+    "calinski_harabasz_score": 35.358849387094594,
+    "inertia": 11974.933300047833,
+    "n_samples_trained": 500,
+    "features": {
+        "numeric": [
+            "Age",
+            "Review_Influence_Score",
+            "Social_Ads_Influence_Score",
+            "Price_Comparison_Frequency",
+            "Discount_Importance_Score",
+            "Likely_To_Buy_After_Ad_Score",
+            "Impulse_Purchase_Frequency",
+            "Online_Shopping_Satisfaction_Score",
+            "Trust_In_Online_Reviews_Score",
+            "Regret_After_Purchase_Frequency"
+        ],
+        "ordinal": [
+            "Monthly_Income_Range",
+            "Online_Shopping_Frequency",
+            "Avg_Monthly_Spend_NonEssentials",
+            "Uses_BNPL_Installments"
+        ],
+        "nominal": [
+            "Gender",
+            "Occupation_Status",
+            "Country_Region",
+            "Shop_Most_Where",
+            "Preferred_Platform",
+            "Primary_Device",
+            "Top_Spending_Category",
+            "Preferred_Payment_Method",
+            "Makes_Shopping_List",
+            "Follows_Brands_On_Social",
+            "Reason_Prefer_Online",
+            "Reason_Prefer_InStore",
+            "Best_Shopping_Mode",
+            "Return_Frequency"
+        ]
+    },
+    "hyperparameters": {
+        "init": "k-means++",
+        "n_init": 50,
+        "max_iter": 500,
+        "random_state": 42
+    }
+}
